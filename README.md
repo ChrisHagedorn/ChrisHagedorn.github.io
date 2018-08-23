@@ -1,8 +1,8 @@
 # ChrisHagedorn.github.io
 
-##Algorithms
+## Algorithms
 
-###Find Largest Number
+### Find Largest Number
 
 ```java
     static int findLargestNum(int[] a) {
