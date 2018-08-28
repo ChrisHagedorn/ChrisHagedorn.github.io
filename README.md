@@ -29,12 +29,13 @@
                     int temp = ar[x];
                     ar[x] = ar[x + 1];
                     ar[x + 1] = temp;
-                }
-                if (!changeMade) {
-                    return;
-                } else {
-                    changeMade = false;
+                    
+                    if (!changeMade) {
+                        return;
+                    } else {
+                        changeMade = false;
 
+                    }
                 }
 
             }
