@@ -43,3 +43,34 @@
         }
     }
   ```
+  
+  ### Selection Sort
+  ```java
+
+      static void selectionSort(int[] ar) {
+        for(int i = 0; i < ar.length - 1; i++){
+            int minPos = getMinPos(ar, i);
+            int tmp = ar[i];
+            ar[i] = ar[minPos];
+            ar[minPos] = tmp;
+            
+        
+        }
+
+    }
+
+    private static int getMinPos(int[] ar, int start) {
+        int min = ar[start];
+        int minPos = start;
+        for (int i = start; i < ar.length; i++) {
+            if (ar[i] < min) {
+                min = ar[i];
+                minPos = i;
+
+            }
+
+        }
+        return minPos;
+
+    }
+```
